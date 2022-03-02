@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<font face="times new roman">
+<textarea cols=60 rows=28>#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+// Oblicz iloczyn liczb od liczby dolnej do liczby górnej ( wczytanych z klawiatury).
+// wszystkie zmienne z trzema literami nazwiska
+system("chcp 1250");
+int gora_but;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_but;
+// zadeklaruj oraz dodaj dolną granicę obliczania sumy
+// dol_kow dodaj w pętli
+int dol_but;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_but;
+int iloczyn_but=1;
+for (int i=dol_but;i<=gora_but;i++)
+{
+iloczyn_but=iloczyn_but*i;
+}
+cout<<"Iloczyn="<<iloczyn_but<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}</textarea>
+</font>
+</body>
+</html>

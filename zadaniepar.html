@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<font face="times new roman">
+<textarea cols=60 rows=32>#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+// Oblicz sumę liczb parzystych który po wczytaniu dwóch liczb dol_trzy_litery i gora_trzy_litery Obliczy sumę liczb parzystych między tymi liczbami.
+// wszystkie zmienne z trzema literami nazwiska
+system("chcp 1250");
+int gora_but;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_but;
+// zadeklaruj oraz dodaj dolną granicę obliczania sumy
+// dol_kow dodaj w pętli
+int dol_but;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_but;
+int suma_but=0;
+for (int i=dol_but;i<=gora_but;i++)
+{
+    if (i % 2==0)
+    {
+suma_but=suma_but+i;
+}
+}
+cout<<"suma="<<suma_but<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}</textarea>
+</font>
+</body>
+</html>
